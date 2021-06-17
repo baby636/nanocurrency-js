@@ -31,7 +31,7 @@
     "rollup": "^1.6.0",
     "rollup-plugin-auto-external": "3.0.0-alpha.0",
     "rollup-plugin-license": "^0.13.0",
-    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-terser": "^5.3.1",
     "rollup-plugin-typescript2": "^0.26.0"
   },
   "files": [
