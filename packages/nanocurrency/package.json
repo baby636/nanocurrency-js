@@ -17,7 +17,8 @@
   "bugs": "https://github.com/marvinroger/nanocurrency-js/issues",
   "dependencies": {
     "bignumber.js": "^9.0.0",
-    "blakejs": "^1.1.0"
+    "blakejs": "^1.1.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
@@ -69,6 +70,9 @@
     "generate-docs": "fusee generate-docs",
     "lint": "fusee lint",
     "test": "fusee test",
-    "prepublishOnly": "yarn build:prod && yarn test && yarn lint && yarn generate-docs"
-  }
+    "prepublishOnly": "yarn build:prod && yarn test && yarn lint && yarn generate-docs",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
